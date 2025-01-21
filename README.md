@@ -1,4 +1,4 @@
-# openlit-demo
+# openlit-fastapi-poc
 
 
 #### Start openlit server using docker compose:
@@ -18,7 +18,7 @@ docker run -d -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
 docker exec -it ollama ollama run llama3.1
 ```
 
-### Start openlit demo app:
+### Start openlit fastapi app:
 ```shell
 poetry config virtualenvs.in-project true
 poetry install
