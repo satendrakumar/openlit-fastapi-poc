@@ -8,14 +8,14 @@ if not os.path.exists(log_folder):
     os.makedirs(log_folder)
 
 date = datetime.datetime.now()
-file_name = f'{log_folder}/openlit-poc-' + str(date.year) + str(date.month) + str(date.day) + '.log'
+file_name = f'{log_folder}/app-' + str(date.year) + str(date.month) + str(date.day) + '.log'
 
 log_format = logging.Formatter('[%(levelname)s] - [%(asctime)s] - [%(name)s] %(message)s')
 
 main_log = logging.getLogger('')
 main_log.setLevel(logging.INFO)
 
-logging.basicConfig(filename=f'{log_folder}/openlit-poc.log',
+logging.basicConfig(filename=f'{log_folder}/app.log',
                     format='[%(levelname)s] - [%(asctime)s] - [%(name)s]  %(message)s',
                     level=logging.INFO)
 

@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "openlit-demo"
+name = "openlit-fastapi-poc"
 version = "0.1.0"
 description = ""
 authors = ["Satendra Kumar <satendrakumar06@gmail.com>"]
