@@ -22,6 +22,7 @@ docker exec -it ollama ollama run llama3.1
 ```shell
 poetry config virtualenvs.in-project true
 poetry install
+set -a;source .env; set +a
 python main.py
 ### API docs
 http://localhost:8000/docs

@@ -16,7 +16,7 @@ openlit.init(application_name="chat_app")
 
 log = get_logger(__name__)
 
-APP_PORT = os.getenv("APP_PORT", default=8000)
+APP_PORT = int(os.getenv("APP_PORT", default=8000))
 
 app = FastAPI()
 
